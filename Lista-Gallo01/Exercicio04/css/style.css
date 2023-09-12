@@ -1,0 +1,15 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(110, 38, 38);
+    color: rgb(243, 243, 243);
+}
+
+body{
+    min-height: 100vh;
+}
+
+button{
+    background-color: rgb(199, 199, 199);
+    color: black;
+    font-size: medium;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Exercicio 12</title>
+</head>
+
+<body>
+    <h3>Exercicio 12</h3>
+    <p>O cardápio de uma lanchonete é o seguinte:</p>
+    <div class="img">
+        <img src="img/Captura de tela 2023-09-04 142900.png" alt="Tabela hamburguer">
+    </div>
+    <p>Escrever um algoritmo que leia o código do item pedido, a quantidade e calcule o valor a ser <br>
+        pago por aquele lanche. Considere que a cada execução somente será calculado um item.</p>
+    <hr>
+    <br>
+    <div id="main">
+        <div id="card-input">
+            <label for="codigo">Insira o código do sanduíche: <input type="number" id="codigo"></label>
+            <br><br>
+            <label for="quantidade">Insira a quantidade: <input type="number" id="quantidade"></label>
+        </div>
+<br>
+        <button onclick="Pedido()">Fazer pedido</button>
+
+        <h3 id="resultado">Pedido:</h3>
+        <h3 id="resultado2">Valor do Pedido:</h3>
+    </div>
+</body>
+
+</html>

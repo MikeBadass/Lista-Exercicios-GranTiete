@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <title>Exercicio 7</title>
+</head>
+
+<body>
+    <div id="enunciado">
+        <h2>Exercicio 7</h2>
+        <li>
+            O custo ao consumidor de um carro novo, é a soma do custo de fábrica com a percentagem do revendedor e <br>
+            com o custo dos impostos (aplicados ao custo de fábrica). Supondo que a percentagem do revendedor seja de
+            <br>
+            25% do custo de fábrica e que os impostos custam 45 % do custo de fábrica, faça um algoritmo que leia o <br>
+            valor de custo de fábrica e determine o preço final do automóvel (custo ao consumidor).
+        </li>
+        <br>
+        <hr>
+    </div>
+    <div id="inputs">
+        <label for="nome">Custo de fábrica:</label>
+        <input type="number" id="custoFabrica">
+        <br><br>
+        <div id="valoresConstantes"><label for="nome">% do revendedor:</label>
+            <input type="text" value="25%" id="percentagemRevendedor" readonly>
+            <br><br>
+            <label for="nome">Custo dos impostos:</label>
+            <input type="text" value="45%" id="custoImpostos" readonly>
+        </div>
+    </div>
+    <br><br>
+    <div id="buttons">
+        <button id="calcular-preco" onclick="CalcularPreco()">Calcular Preço</button>
+    </div>
+    <br>
+    <h3 id="resultado">Preço final: </h3>
+</body>
+
+</html>

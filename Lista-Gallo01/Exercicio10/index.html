@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <title>Exercicio 10</title>
+</head>
+
+<body>
+    <div id="enunciado">
+        <h2>Exercicio 10</h2>
+        <li>
+            Analisando a fórmula "Prestação = valor + (valor * (taxa/100) * tempo)", crie um algoritmo para efetuar o
+            <br>
+            cálculo do valor de uma prestação em atraso. Você deverá ler o VALOR da prestação, a TAXA de juros <br>
+            imposta pelo banco, e o número de dias em ATRASO.
+        </li>
+        <br>
+        <hr>
+    </div>
+    <div id="inputs">
+        <label for="valorPrestacao">Valor da prestação:</label>
+        <input type="number" id="valorPrestacao">
+        <br><br>
+        <label for="taxaJuros">Taxa de juros:</label>
+        <input type="number" id="taxaJuros">
+        <br><br>
+        <label for="diasAtraso">Dias em atraso:</label>
+        <input type="number" id="diasAtraso">
+    </div>
+    <br>
+    <div id="buttons">
+        <button id="calcular" onclick="Calcular()">Calcular</button>
+    </div>
+
+    <h3 id="prestacaoAtraso">Valor da prestação em atraso: </h3>
+</body>
+
+</html>

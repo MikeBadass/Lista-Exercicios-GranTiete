@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <title>Exercicio 8</title>
+</head>
+
+<body>
+    <div id="enunciado">
+        <h2>Exercicio 8</h2>
+        <li>
+            Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por
+            <br>
+            ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, <br>
+            informar o seu nome, o salário fixo e salário no final do mês.
+        </li>
+        <br>
+        <hr>
+    </div>
+    <div id="inputs">
+        <label for="nome">Nome do vendedor:</label>
+        <input type="text" id="nome">
+        <br><br>
+        <label for="salarioFixo">Salário fixo:</label>
+        <input type="number" id="salarioFixo">
+        <br><br>
+        <label for="totalVendas">Total de vendas (R$):</label>
+        <input type="number" id="totalVendas">
+        <br><br>
+        <div id="valoresConstantes">
+            <label for="comissao">% de comissão</label>
+            <input type="text" id="comissao" readonly value="15%">
+        </div>
+    </div>
+    <br><br>
+    <div id="buttons">
+        <button id="calcular-preco" onclick="CalcularSalario()">Calcular Salário</button>
+    </div>
+    <br>
+    <h3 id="nomeVendedor">Vendedor: </h3>
+    <h3 id="salario">Salário Fixo: </h3>
+    <h3 id="salarioFinal">Salário Final: </h3>
+</body>
+
+</html>
