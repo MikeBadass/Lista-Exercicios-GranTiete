@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Exercicio 14</title>
+</head>
+
+<body>
+    <h3>Exercicio 14</h3> 
+    <p>Tendo como dados de entrada a idade, altura e o sexo de uma pessoa (‘M’ masculino e ‘F’
+        feminino), construa um algoritmo que calcule seu peso ideal, utilizando as seguintes
+        fórmulas:</p>
+        <div class="img">
+            <img src="img/Captura de tela 2023-09-15 092418.png" alt="Tabela Peso Ideal">
+        </div>
+    <hr>
+
+    <div id="main">
+        <div id="card-input">
+            <h3>Selecione seu sexo:</h3>
+            <label for="m"><input type="radio" id="m" name="sexo" value="m">Masculino</label>
+            <label for="f"><input type="radio" id="f" name="sexo" value="f">Feminino</label>
+            <br><br><br>
+            <label for="altura">Insira a sua altura: <input type="number" id="altura" placeholder="ex: (170cm)"></label>
+            <br><br>
+            <label for="idade">Insira a sua idade: <input type="number" id="idade"></label>
+        </div>
+<br>
+        <button onclick="PesoIdeal()">Calcular Peso Ideal</button>
+
+        <h3 id="resultado">Peso Ideal:</h3>
+    </div>
+</body>
+
+</html>
