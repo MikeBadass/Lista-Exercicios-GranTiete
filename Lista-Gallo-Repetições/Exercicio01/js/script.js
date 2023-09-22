@@ -1,11 +1,12 @@
 
-function Tabuada() {
+function Contagem() {
     var n = Number(document.getElementById("number").value);
-    var tabuada = "";
+    var temp = "";
 
-    for (let i = 0; i <= 10; i++) {
-        tabuada += n + " x " + i + " = " + n * i + "\n";
+
+    for (let i = n; i >= 0; i--) {
+        temp += i + " ";
     }
 
-    document.getElementById("textarea").value = tabuada;
+    document.getElementById("textarea").value = temp;
 }
