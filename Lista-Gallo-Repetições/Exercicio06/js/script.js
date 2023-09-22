@@ -1,17 +1,20 @@
-let numeros = [];
 
-function Media() {
+
+function Soma() {
+    let soma = 0
+    let temp = ""
     let n = Number(document.getElementById('number').value);
 
-    if (!isNaN(n)) {
-        if (n !== -1) {
-            numeros.push(n);
-            document.getElementById('number').value = '';
-        } else {
-            numeros.pop;
-            let soma = numeros.reduce((acc, curr) => acc + curr, 0);
-            let media = soma / numeros.length;
-            document.getElementById('textarea').value = `Média: ${media.toFixed(1)}`;
-        }
+    for (let i = 1; i <= n; i++) {
+        if(i % 2 == 0){
+            soma += i;
+            if (i === n) {
+                temp += `${i}`;
+            } else {
+                temp += `${i} + `;
+            }
+        }  
     }
+
+    document.getElementById("textarea").innerHTML = temp + " = " + soma;
 }
